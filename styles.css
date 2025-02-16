@@ -56,7 +56,7 @@ body{
     width: 75%;
 }
 .FrontTechs .carousel-item , .BackTechs .carousel-item{
-    min-height: 50vh;
+    min-height: 60vh;
 }
 @media screen and (max-width:1000px){
     * {
@@ -79,6 +79,9 @@ body{
     }
     .inovation{
         height: 50%;
+    }
+    .FrontTechs .carousel-item , .BackTechs .carousel-item{
+        min-height: 47vh;
     }
 }
 @media screen and (max-width:600px) {

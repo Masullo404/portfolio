@@ -36,7 +36,7 @@
             </a>
         </div>
     </nav>      
-    <section class="d-flex justify-content-center align-items-start text-white" id="about">
+    <section class="d-flex justify-content-center align-items-start text-white">
         <video src="https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4" preload="metadata"  autoplay loop class="w-100 h-100 video"></video>
         <div class="d-flex flex-column justify-content-between position-absolute w-100 h-100 fade-up">
             <div class="d-flex flex-column justify-content-center inovation text-end pe-5" data-aos="fade-right" data-aos-duration="2000">
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <section class="m-0 d-flex justify-content-center align-items-center p-5 bg-black">
+    <section class="m-0 d-flex justify-content-center align-items-center p-5 bg-black" id="about">
         <video src="./assets/rocket-video.mp4" muted preload="auto" class="w-100 h-100 rounded object-fit-cover" autoplay id="RocketVideo"></video>
         <div class="position-absolute w-100 text-white p-5 d-flex w-100 justify-content-start flex-column flex-md-row justify-content-md-between rocket">
             <div class="p-5 d-flex flex-column justify-content-center h-100" data-aos="fade-right" data-aos-duration="3000">
@@ -137,7 +137,7 @@
                             </div>
                             <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="d-flex  justify-content-center align-items-center p-5 gap-5 mb-5 flex-column flex-md-row">
+                                <div class="d-flex justify-content-center align-items-center p-5 gap-5 mb-5 flex-column ">
                                     <img src="./assets/nodejsStackedLight.svg" class="d-block TechsImages " alt="Javascript logo">
                                     <div>
                                         <p class="h3">Node</p>
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="d-flex flex-column align-items-center justify-content-center p-5 gap-4 flex-column flex-md-row">
+                                <div class="d-flex flex-column align-items-center justify-content-center p-5 gap-4 flex-column ">
                                     <img src="./assets/express.png" class="d-block TechsImages w-100 h-auto" alt="NextJs logo">
                                     <div>
                                         <p class="h3">Express</p>
@@ -321,29 +321,35 @@
     <section class="bg-black p-5 d-flex flex-column flex-md-row justify-content-around align-items-center text-white gap-5">
         <div class="text-center d-flex flex-column justify-content-between">
             <p class="h2">Onde estou?</p>
-            <img src="./assets/99freelas.png" alt="99Freelas logo" class="FreelasImgs rounded"  data-aos="fade-down-right" data-aos-duration="1500">
-            <p class="h4 pt-5"   data-aos="fade-down-right" data-aos-duration="1500" >99Freelas</p>
+            <div data-aos="fade-down-right" data-aos-duration="1500">
+                <img src="./assets/99freelas.png" alt="99Freelas logo" class="FreelasImgs rounded" >
+                <p class="h4 pt-5">99Freelas</p>
+            </div>
         </div>
         <div class="text-center d-flex flex-column justify-content-between">
-            <img src="./assets/workana-logo.png" alt="Workana logo" class="FreelasImgs rounded" data-aos="fade-down" data-aos-duration="1500">
-            <p class="h4 pt-5"  data-aos="fade-down" data-aos-duration="1500">Workana</p>
+            <div data-aos="fade-down" data-aos-duration="1500">
+                <img src="./assets/workana-logo.png" alt="Workana logo" class="FreelasImgs rounded">
+                <p class="h4 pt-5" >Workana</p>
+            </div>
         </div>
         <div class="text-center d-flex flex-column justify-content-between">
-            <img src="./assets/fiverr.png" alt="Fiverr logo" class="FreelasImgs" data-aos="fade-down-left" data-aos-duration="1500">
-            <p class="h4 pt-5" data-aos="fade-down-left" data-aos-duration="1500">Fiverr</p>
+            <div data-aos="fade-down-left" data-aos-duration="1500">
+                <img src="./assets/fiverr.png" alt="Fiverr logo" class="FreelasImgs">
+                <p class="h4 pt-5">Fiverr</p>
+            </div>
         </div>
     </section>
 
     <footer class="d-flex justify-content-evenly bg-black text-white align-items-center p-5 flex-wrap">
-        <div>
+        <div data-aos="fade-down" data-aos-duration="2000">
             <h1>JM</h1>
         </div>
-        <div class="d-flex justify-content-center gap-5">
+        <div class="d-flex justify-content-center gap-5" >
             <a href="#about" class="text-white ">About Me</a>
             <a href="#techs" class="text-white ">Techs</a>
             <a href="#projects" class="text-white ">Projects</a>
         </div>
-        <div class="pt-3">
+        <div class="pt-3" data-aos="fade-down" data-aos-duration="2000">
             <p>Meio de Contato:</p>
             <p>Email: <u>masullowebdev@gmail.com</u></p>
         </div>
