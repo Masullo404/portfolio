@@ -34,10 +34,10 @@
         </div>
     </nav>      
     <section class="d-flex justify-content-center align-items-start text-white" id="about">
-        <video src="https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4" autoplay loop class="w-100 h-100 video"></video>
+        <video src="https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4" preload="none" autoplay loop class="w-100 h-100 video"></video>
         <div class="d-flex flex-column justify-content-between position-absolute w-100 h-100">
             <div class="d-flex flex-column justify-content-center inovation text-end pe-5">
-                <h1>Inovação: Aquilo que move o mundo</h1>
+                <h1 class="inovation-title">Inovação: Aquilo que move o mundo</h1>
                 <p>Código é apenas <strong><i>uma</i></strong> das <strong><i>várias</i></strong> soluções para um <strong>problema</strong>. <br>
                 Como programador, busco soluções simples para problemas <strong>complexos</strong>. </p>
             </div>
@@ -46,7 +46,7 @@
 
     <section class="m-0 d-flex justify-content-center align-items-center p-5 bg-black">
         <video src="./assets/rocket-video.mp4" muted preload="auto" class="w-100 h-100 rounded object-fit-cover" autoplay id="RocketVideo"></video>
-        <div class="position-absolute w-100 text-white p-5 d-flex w-100 justify-content-start flex-column flex-md-row justify-content-md-between">
+        <div class="position-absolute w-100 text-white p-5 d-flex w-100 justify-content-start flex-column flex-md-row justify-content-md-between rocket">
             <div class="p-5 d-flex flex-column justify-content-center h-100 ">
                 <p class="RocketTitles">Aprendendo com os erros e <br> decolando como um foguete</p>
                 <p>Como um apaixonado por exatas, a maior gratificação <br>é aprender com um problema e saber que isto te tornou melhor.</p>
@@ -63,7 +63,7 @@
         <div class="position-absolute w-100 p-5 d-flex flex-column align-items-center">
             <h1 class="pb-5">Minhas habilidades</h1>
             <div class="d-flex justify-content-center gap-5 mt-5 flex-column flex-sm-row align-items-center">
-                    <div class="FrontTechs w-50">
+                    <div class="FrontTechs ">
                         <h1 class="text-center">Front-End</h1>
                         <div id="carouselOne" class="carousel slide">
                             <div class="carousel-indicators">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="BackTechs w-50">
+                    <div class="BackTechs">
                         <h1 class="text-center">Back-End Techs</h1>
                         <div id="carouselTwo" class="carousel slide">
                             <div class="carousel-indicators">
@@ -192,27 +192,27 @@
                 <div id="carouselThree" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="15000">
-                        <div class="d-flex justify-content-center align-items-center p-5 gap-5 h-100 flex-column flex-md-row">
-                            <div class="d-grid w-50">
+                        <div class="d-flex justify-content-center align-items-center p-5 gap-5 h-100 flex-column flex-md-row project-div">
+                            <div class="d-grid">
                                 <div class="container w-75 ">
                                     <div class="row">
                                         <div class="col">
-                                            <img src="./projectsImgs/listare/screenshot.png" alt="" class="w-100 img-fluid">
+                                            <img src="./projectsImgs/listare/screenshot.png" alt="Listare project image" class="w-100 img-fluid">
                                         </div>
                                         <div class="col">
-                                            <img src="./projectsImgs/listare/screenshot-2.png" alt="" class="w-100 img-fluid">
+                                            <img src="./projectsImgs/listare/screenshot-2.png" alt="Listare project image" class="w-100 img-fluid">
                                         </div>
                                     </div>
                                     <div class="row py-2">
                                         <div class="col ">
-                                            <img src="./projectsImgs/listare/screenshot-3.png" alt="" class="w-100 img-fluid">
+                                            <img src="./projectsImgs/listare/screenshot-3.png" alt="Listare project image" class="w-100 img-fluid">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-50">
+                            <div>
                                 <p class="h2">Projeto: <a href="https://listare-gamma.vercel.app/">Listare</a></p>
-                                <p class="w-75 text-start">Este projeto consiste na criação de um gerenciador de tarefas pessoal, onde você entra com sua conta e depois pode criar 
+                                <p class="text-start projects-text">Este projeto consiste na criação de um gerenciador de tarefas pessoal, onde você entra com sua conta e depois pode criar 
                                     suas lista e tarefas baseados em tags e categorias. 
                                     Clique <a href="https://www.linkedin.com/feed/update/urn:li:activity:7290437980907831296/">aqui</a> para saber mais.
                                 </p>
@@ -220,8 +220,8 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <div class="d-flex align-items-center justify-content-center p-5  h-100 flex-column flex-md-row">
-                            <div class="d-grid w-50">
+                        <div class="d-flex align-items-center justify-content-center p-5  h-100 flex-column flex-md-row project-div">
+                            <div class="d-grid">
                                 <div class="container w-75">
                                     <div class="row py-2">
                                         <div class="col">
@@ -238,9 +238,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-50">
+                            <div class="ps-2">
                                 <p class="h2">Projeto: <a href="https://easy-recipes-first-project.vercel.app/">Easy Recipes</a></p>
-                                <p class="w-75 text-start">É uma aplicação web desenvolvida para servir como um sistema de criação, compartilhamento e pesquisa de receitas 
+                                <p class="text-start projects-text">É uma aplicação web desenvolvida para servir como um sistema de criação, compartilhamento e pesquisa de receitas 
                                     gastronômicas. No Easy Recipes você pode criar um conta e criar suas próprias receitas, estas que são customizadas 
                                     com tags e descrições e imagens. Há também um sistema de favoritos e likes na plataforma.
                                     Clique <a href="https://www.linkedin.com/feed/update/urn:li:activity:7282873392372871169/">aqui</a> para saber mais.
@@ -249,8 +249,8 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <div class="d-flex align-items-center justify-content-center p-5 h-100 flex-column flex-md-row">
-                            <div class="d-grid w-50">
+                        <div class="d-flex align-items-center justify-content-center p-5 h-100 flex-column flex-md-row project-div">
+                            <div class="d-grid">
                                 <div class="container w-75">
                                     <div class="row py-2">
                                         <div class="col">
@@ -267,9 +267,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-50">
+                            <div>
                                 <p class="h2">Projeto: <a href="https://pnsconsoladora.com/">PnsConsoladora</a></p>
-                                <p class="w-75 text-start">Este website foi criado com o intuito de criar uma apresentação online para a Igreja, o que posteriormente
+                                <p class="text-start projects-text">Este website foi criado com o intuito de criar uma apresentação online para a Igreja, o que posteriormente
                                     tornou-se muito mais do que apenas uma apresentação, mas sim um blog com artigos, eventos e informações
                                     da Igreja.
                                 </p>
@@ -277,8 +277,8 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="15000">
-                        <div class="d-flex align-items-center justify-content-center p-5 gap-5 h-100 flex-column flex-md-row">
-                            <div class="d-grid w-50">
+                        <div class="d-flex align-items-center justify-content-center p-5 gap-5 h-100 flex-column flex-md-row project-div">
+                            <div class="d-grid">
                                 <div class="container w-75">
                                     <div class="row">
                                         <div class="col">
@@ -295,9 +295,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-50">
+                            <div>
                                 <p class="h2">Projeto: <a href="https://jgfilmesstrech.com/">JG Serviços</a></p>
-                                <p class="w-75 text-start">Este projeto foi uma landing page para apresentação da JG Serviços, uma empresa de logística.
+                                <p class="text-star projects-textt">Este projeto foi uma landing page para apresentação da JG Serviços, uma empresa de logística.
                                     Contudo há a demonstração de produtos oferecidos pela empresa e outros elementos empresariais.
                                 </p>
                             </div>

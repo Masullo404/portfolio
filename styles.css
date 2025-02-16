@@ -42,11 +42,21 @@ body{
 #RocketVideo{
     min-height: 377px;
 }
-@media screen and (max-width:1300px) {
-    .TechsImages{
-        height: 20vh;
-        width: auto;
-    }
+.FrontTechs , .BackTechs{
+    width: 50%;
+}
+.TechsImages{
+    width: 50%;
+    height: auto;
+}
+.project-div div{
+    width: 100%;
+}
+.projects-text{
+    width: 75%;
+}
+.FrontTechs .carousel-item , .BackTechs .carousel-item{
+    min-height: 47vh;
 }
 @media screen and (max-width:1000px){
     * {
@@ -75,11 +85,29 @@ body{
     .inovation{
         height: 37%;
     }
+    .inovation > h1{
+        font-size: 16px;
+    }
+    .inovation > p{
+        font-size: 8px;
+    }
+    .rocket p{
+        font-size: 8px;
+    }
     .habilities{
         height: 150vh;
     }
     .habilities-video{
         height: 140vh;
         object-fit: cover;
+    }
+    .FrontTechs , .BackTechs{
+        width: 100%;
+    }
+    .project-div div{
+        width: 100%;
+    }
+    .projects-text{
+        width: 100%;
     }
 }
