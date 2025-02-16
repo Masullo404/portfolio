@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Karla",serif;
+}
+.Nav{
+    margin-bottom: -7rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: linear-gradient(black , transparent);
+}
+.Nav > div > a {
+    text-decoration: none;
+    color: white;
+}
+.video{
+    filter: brightness(0.7);
+}
+.inovation{
+    height: 75%;
+}
+.TechsImages{
+    height: 40vh;
+    width: auto;
+}
+.FreelasImgs{
+    height: 20vh;
+    width:auto;
+    object-fit: cover;
+}
+.gradient{
+    background-image: linear-gradient(black, transparent, black);
+}
+.RocketTitles{
+    font-size: calc(1.325rem + .9vw);
+}
+#RocketVideo{
+    min-height: 377px;
+}
+@media screen and (max-width:1300px) {
+    .TechsImages{
+        height: 20vh;
+        width: auto;
+    }
+}
+@media screen and (max-width:1000px){
+    * {
+        font-size: 12px;
+    }
+    .RocketTitles{
+        font-size: 15px;
+    }
+    .techs{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:750px) {
+    .projects{
+        height: 70vh;
+    }
+    .projects-video{
+        height: 60vh;
+        object-fit: cover;
+    }
+    .inovation{
+        height: 50%;
+    }
+}
+@media screen and (max-width:600px) {
+    .inovation{
+        height: 37%;
+    }
+    .habilities{
+        height: 150vh;
+    }
+    .habilities-video{
+        height: 140vh;
+        object-fit: cover;
+    }
+}
