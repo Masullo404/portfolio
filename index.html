@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <!-- GOOGLE FONT: KARLA -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,354 +15,217 @@
     <title>My Portfolio</title>
     <!-- AOS ANIMATION -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
-    <nav class="Nav py-4 px-5">
-        <div> 
-            <h1>JM</h1>
+    <nav class="Nav p-2" id="#inicio">
+        <div class="w-25 d-flex justify-content-center">
+            <img src="./assets/JM.png" alt="Logo" class="Logo">
         </div>
-        <div class="fs-5 d-flex justify-content-center align-items-center gap-4">
-            <a href="#about">Sobre</a>
-            <a href="#techs">Techs</a>
-            <a href="#projects">Projetos</a>
+        <div class="fs-5 d-flex justify-content-center align-items-center gap-4 Links">
+            <a href="/" class="Links">Início</a>
+            <a href="/services.html" class="Links">Serviços</a>
+            <a href="/contact.html" class="Links">Contato</a>
+        </div>
+        <div class="w-25 d-flex justify-content-center align-items-center gap-5 Medias">
             <a href="https://www.linkedin.com/in/jo%C3%A3o-masullo-846b672b9/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin " viewBox="0 0 16 16">
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                 </svg>
             </a>
-            <a href="https://github.com/Masullo404" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            <a href="https://www.facebook.com/people/JoaoMasullo/61573914655245/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/joao_masullo/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                 </svg>
             </a>
         </div>
-    </nav>      
-    <section class="d-flex justify-content-center align-items-start text-white">
-        <video src="./assets/earth-video.mp4" muted autoplay loop class="w-100 h-100 video"></video>
-        <div class="d-flex flex-column justify-content-between position-absolute w-100 h-100 fade-up">
-            <div class="d-flex flex-column justify-content-center inovation text-end pe-5" data-aos="fade-right" data-aos-duration="2000">
-                <h1 class="inovation-title">Inovação: Aquilo que move o mundo</h1>
-                <p>Código é apenas <strong>uma</strong> das <strong>muitas</strong> ferramentas para resolver um <strong>problema</strong>. <br>
-                Meu objetivo como programador é criar soluções <strong>simples</strong> para desafios <strong>complexos</strong>. </p>
+        <!-- OFF CANVAS BOOTSTRAP MENU -->
+        <button class="bg-black border-0 d-none OffCanvas " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list fs-6" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+        
+        <div class="bg-black offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="color: #eac151;">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-flex flex-column justify-content-center gap-3">
+              <a href="/" class="Links">Início</a>
+              <a href="/services.html" class="Links">Serviços</a>
+              <a href="/contact.html" class="Links mb-5">Contato</a>
+              
+              <div class="d-flex justify-content-center gap-5">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-masullo-846b672b9/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin " viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg>
+              </a>
+              <a href="https://www.facebook.com/people/JoaoMasullo/61573914655245/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+              </a>
+              <a href="https://www.instagram.com/joao_masullo/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+              </a>
+              </div> 
             </div>
+          </div>
         </div>
-    </section>
-
-    <section class="m-0 d-flex justify-content-center align-items-center p-5 bg-black" id="about">
-        <video src="./assets/rocket-video.mp4" muted preload="auto" class="w-100 h-100 rounded object-fit-cover" autoplay id="RocketVideo"></video>
-        <div class="position-absolute w-100 text-white p-5 d-flex w-100 justify-content-start flex-column flex-md-row justify-content-md-between rocket">
-            <div class="p-5 d-flex flex-column justify-content-center h-100" data-aos="fade-right" data-aos-duration="3000">
-                <p class="RocketTitles">Aprendendo com os erros e <br> decolando como um foguete</p>
-                <p>Como apaixonado por exatas, minha maior gratificação <br> é resolver problemas, aprender com eles e evoluir constantemente.</p>
+    </nav>
+    
+    <section class="FirstSection text-center">
+        <h1 class="display-1">Soluções que geram <br> resultados</h1>
+        <p class="fs-3">Procuras um jeito para escalar o teu negócio?</p>
+        <p class="fs-5">Aqui você encontra as  ferramentas para escalar a  <br>tua empresa no âmbito digital.</p>
+        <button class="button my-5">Contatar</button>
+        <div class="d-flex justify-content-center gap-2">
+            <div class="p-5 w-25">
+                <p class="fs-2">Flexibilidade</p>
+                <p>Desenvolvendo sistemas flexíveis e customizáveis aos olhos dos clientes e consumidores.</p>
             </div>
-            <div class="d-flex flex-column pe-5 justify-content-center ps-5" data-aos="zoom-out-right" data-aos-duration="3000">
-                <p class="text-md-center RocketTitles">Mais Sobre Mim:</p>
-                <p class="text-md-center">Desenvolvedor Web especializado em JavaScript, prezo pela <br> qualidade e eficiência da aplicação, sempre almejando a perfeição.</p>
+            <div class="p-5 w-25">
+                <p class="fs-2">Qualidade</p>
+                <p>Produtos funcionais, elegantes e excelentes. Tudo isto você encontra aqui.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="techs bg-black text-white text-center d-flex justify-content-center habilities" id="techs">
-        <video src="https://videos.pexels.com/video-files/2611250/2611250-uhd_3840_2160_30fps.mp4" muted  preload="none" class="w-100 video habilities-video " loop autoplay></video>
-        <div class="position-absolute w-100 p-5 d-flex flex-column align-items-center">
-            <h1 class="pb-5">Minhas habilidades</h1>
-            <div class="d-flex justify-content-center gap-5 mt-5 flex-column flex-sm-row align-items-center">
-                    <div class="FrontTechs ">
-                        <h1 class="text-center">Front-End</h1>
-                        <div id="carouselOne" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            </div>
-                            <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center align-items-center p-5 gap-5 mb-5 flex-column flex-md-row">
-                                    <img src="./assets/js.png" class="TechsImages" alt="Javascript logo">
-                                    <div class="d-flex flex-column justify-content-center align-items-center">
-                                        <p class="h3">JavaScript</p>
-                                        <p>A principal linguagem de programação da web.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 flex-column flex-md-row">
-                                    <img src="./assets/icons8-next.js-512.png" class="d-block TechsImages" alt="NextJs logo">
-                                    <div>
-                                        <p class="h3">NextJs</p>
-                                        <p>Um dos principais frameworks para desenvolvimento full stack, nextJs facilita a o desenvolvimento Front-End e agiliza a comunicação entre Front-End e Back-End com seu sistema de Api's.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 flex-column flex-md-row">
-                                    <img src="./assets/react.svg" class="d-block shadow-white TechsImages" alt="React logo">
-                                    <div>
-                                        <p class="h3">React</p>
-                                        <p>Biblioteca dinâmica e estável que flexibiliza e encurta o tempo de criação de interfaces.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 flex-column flex-md-row">
-                                    <img src="./assets/bootstrap.png" class="d-block shadow-white TechsImages" alt="Bootstrap logo">
-                                    <div>
-                                        <p class="h3">Bootstrap</p>
-                                        <p>Uma das principais bibliotecas de estilização no mundo, simples e fácil de utilizar, auxilia eximiamente na criação de interfaces responsivas e agradáveis ao usuário.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 flex-column flex-md-row">
-                                    <img src="./assets/sass.png" class="d-block shadow-white TechsImages" alt="Postgres logo">
-                                    <div>
-                                        <p class="h3">Sass</p>
-                                        <p>Uma ferramenta facilitadora e simbólica, todavia auxilia na estilização de projetos e melhora a legibilidade do código.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BackTechs">
-                        <h1 class="text-center">Back-End Techs</h1>
-                        <div id="carouselTwo" class="carousel slide">
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            </div>
-                            <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center align-items-center p-5 gap-5 mb-5 flex-column ">
-                                    <img src="./assets/nodejsStackedLight.svg" class="d-block TechsImages " alt="Javascript logo">
-                                    <div>
-                                        <p class="h3">Node</p>
-                                        <p>Um ambiente Javascript fácil de utilizar que permite a customização e escalabilidade para todo e qualquer tipo de projeto web.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 flex-column flex-md-row">
-                                    <img src="./assets/PostgreSQL_logo.3colors.540x557.png" class="d-block TechsImages" alt="NextJs logo">
-                                    <div>
-                                        <p class="h3">Postgres</p>
-                                        <p>Um banco de dados relacional de fácil manejar e estrutura simples.Ótimo para projetos performáticos.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column align-items-center justify-content-center p-5 gap-4 flex-column ">
-                                    <img src="./assets/express.png" class="d-block TechsImages w-100 h-auto" alt="NextJs logo">
-                                    <div>
-                                        <p class="h3">Express</p>
-                                        <p>Uma biblioteca do npm que auxilia na criação e organização do servidor Nodejs.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 gap-5 flex-column flex-md-row">
-                                    <img src="./assets/typescript.png" class="d-block TechsImages" alt="NextJs logo">
-                                    <div>
-                                        <p class="h3">TypeScript</p>
-                                        <p>Um superset do Javascript que permite a tipagem dinâmica e estável, evitando o possível ocorrimento de bugs no sistema.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex align-items-center justify-content-center p-5 mb-5 gap-5 flex-column flex-md-row">
-                                    <img src="./assets/prisma_logo_icon_248778.png" class="d-block TechsImages bg-white" alt="NextJs logo">
-                                    <div>
-                                        <p class="h3">Prisma</p>
-                                        <p>Um ORM(Object Relational Mapping), ou mapeamento de objetos relacionais, é uma ferramenta 
-                                        que auxilia significativamente na manipulação e organização de dados com o Banco de Dados.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="p-5 w-25">
+                <p class="fs-2">Rapidez</p>
+                <p>Desenvolvimento rápido e prático. O melhor para o cliente.</p>
             </div>
         </div>
     </section>
     
-    <section class="projects bg-black text-white p-4 d-flex justify-content-center align-items-center" id="projects">
-            <video src="https://videos.pexels.com/video-files/10477097/10477097-uhd_2560_1440_24fps.mp4" muted loop preload="none" autoplay class="w-100 h-100 rounded projects-video"></video>
-            <div class="position-absolute d-flex flex-column justify-content-center align-items-center projects">   
-                <h1 class="text-center">Meus Projetos</h1>
-                <div id="carouselThree" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="15000">
-                        <div class="d-flex justify-content-center align-items-center p-5 gap-5 h-100 flex-column flex-md-row project-div">
-                            <div class="d-grid">
-                                <div class="container w-75 ">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="./projectsImgs/listare/screenshot.png" alt="Listare project image" class="w-100 img-fluid">
-                                        </div>
-                                        <div class="col">
-                                            <img src="./projectsImgs/listare/screenshot-2.png" alt="Listare project image" class="w-100 img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="row py-2">
-                                        <div class="col ">
-                                            <img src="./projectsImgs/listare/screenshot-3.png" alt="Listare project image" class="w-100 img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="h2">Projeto: <a href="https://listare-gamma.vercel.app/" target="_blank">Listare</a></p>
-                                <p class="text-start projects-text">Este projeto consiste na criação de um gerenciador de tarefas pessoal, onde você entra com sua conta e depois pode criar 
-                                    suas lista e tarefas baseados em tags e categorias. 
-                                    Clique <a href="https://www.linkedin.com/feed/update/urn:li:activity:7290437980907831296/" target="_blank">aqui</a> para saber mais.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="15000">
-                        <div class="d-flex align-items-center justify-content-center p-5  h-100 flex-column flex-md-row project-div">
-                            <div class="d-grid">
-                                <div class="container w-75">
-                                    <div class="row py-2">
-                                        <div class="col">
-                                            <img src="./projectsImgs/easyRecipes/screenshot.png" alt="Easy Recipes project image" class="w-100 img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="./projectsImgs/easyRecipes/screenshot-2.png" class="w-100 img-fluid" alt="Easy Recipes project image">
-                                        </div>
-                                        <div class="col">
-                                            <img src="./projectsImgs/easyRecipes/screenshot-3.png" class="w-100 img-fluid" alt="Easy Recipes project image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ps-2">
-                                <p class="h2">Projeto: <a href="https://easy-recipes-first-project.vercel.app/" target="_blank">Easy Recipes</a></p>
-                                <p class="text-start projects-text">É uma aplicação web desenvolvida para servir como um sistema de criação, compartilhamento e pesquisa de receitas 
-                                    gastronômicas. No Easy Recipes você pode criar um conta e criar suas próprias receitas, estas que são customizadas 
-                                    com tags e descrições e imagens. Há também um sistema de favoritos e likes na plataforma.
-                                    Clique <a href="https://www.linkedin.com/feed/update/urn:li:activity:7282873392372871169/" target="_blank">aqui</a> para saber mais.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="15000">
-                        <div class="d-flex align-items-center justify-content-center p-5 h-100 flex-column flex-md-row project-div">
-                            <div class="d-grid">
-                                <div class="container w-75">
-                                    <div class="row py-2">
-                                        <div class="col">
-                                            <img src="./projectsImgs/pnsconso/screenshot.png" alt="PnsConsoladora project images" class="w-100 img-fluid object-fit-cover">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="./projectsImgs/pnsconso/screenshot-2.png" alt="PnsConsoladora project images" class="w-100 img-fluid object-fit-cover">
-                                        </div>
-                                        <div class="col">
-                                            <img src="./projectsImgs/pnsconso/screenshot-3.png" alt="PnsConsoladora project images" class="w-100 img-fluid object-fit-cover">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="h2">Projeto: <a href="https://pnsconsoladora.com/" target="_blank">PnsConsoladora</a></p>
-                                <p class="text-start projects-text">Este website foi criado com o intuito de criar uma apresentação online para a Igreja, o que posteriormente
-                                    tornou-se muito mais do que apenas uma apresentação, mas sim um blog com artigos, eventos e informações
-                                    da Igreja.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="15000">
-                        <div class="d-flex align-items-center justify-content-center p-5 gap-5 h-100 flex-column flex-md-row project-div">
-                            <div class="d-grid">
-                                <div class="container w-75">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="./projectsImgs/jg/screenshot.png" alt="Jg Serviços project image" class="w-100 img-fluid object-fit-cover">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="./projectsImgs/jg/screenshot-2.png" alt="Jg Serviços project image" class="w-100 img-fluid object-fit-cover">
-                                        </div>
-                                        <div class="col">
-                                            <img src="./projectsImgs/jg/screenshot-3.png" alt="Jg Serviços project image" class="w-100 img-fluid object-fit-cover">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="h2">Projeto: <a href="https://jgfilmesstrech.com/" target="_blank">JG Serviços</a></p>
-                                <p class="text-start projects-text">Este projeto foi uma landing page para apresentação da JG Serviços, uma empresa de logística.
-                                    Contudo há a demonstração de produtos oferecidos pela empresa e outros elementos empresariais.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselThree" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselThree" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+    <section class="d-flex justify-content-center align-items-center DPad SecondSection">
+        <div class="d-flex flex-column align-items-center w-25">
+            <h2 class="h1 display-3" style="font-weight: 600;">Sobre mim</h2>
+            <p class="fs-5 start">Desenvolvedor Full Stack, com experiência no desenvolvimento de websites, Lojas virtuais, aplicações web funcionais elegantes e responsivas.</p>
+        </div>
+        <div class="d-flex gap-2 justify-content-start w-50">
+            <img src="./assets/code-1.jpg" alt="Image of code" class="w-50 rounded">
+            <img src="./assets/code-2.jpg" alt="Image of code" class="w-50 rounded">
+        </div>
+    </section>
+
+    <section class="bg-light d-flex flex-column align-items-center DPad ThirdSection">
+        <h3 class="display-3">Soluções</h3>
+        <p class="mb-5 text-center">Desenvolvimento de sites, lojas Virtuais, sistemas web customizáveis e escaláveis de acordo com a sua necessidade.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <div class="rounded w-25">
+                <img src="./assets/code-3.jpg" alt="" class="w-100 rounded">
+                <p class="h3">Landing Pages</p>
+                <p>Criação de sites responsivos e atraentes que ajudam a destacar seu negócio na internet.</p>
+                <a href="/services.html"><button class="button-white">Saiba mais</button></a>
+            </div>
+            <div class="rounded w-25">
+                <img src="./assets/code-4.jpg" alt="" class="w-100 rounded">
+                <p class="h3">Lojas Virtuais</p>
+                <p>Desenvolvimento de lojas virtuais completas, otimizadas para vendas e com design que encanta os clientes.</p>
+                <a href="/services.html"><button class="button-white">Saiba mais</button></a>
+            </div>
+            <div class="rounded w-25">
+                <img src="./assets/code-5.jpg" alt="" class="w-100 rounded">
+                <p class="h3">SEO</p>
+                <p>Aplicações otimizadas para mecanismos de busca, fazendo o seu negócio ter visibilidade e atraindo clientes.</p>
+                <a href="/services.html"><button class="button-white">Saiba mais</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #eac151;" class="d-flex justify-content-center align-items-center DPad FourthSection">
+        <div class="w-25">
+            <p class="fs-1">★★★★★</p>
+            <p class="fs-2">O trabalho foi excepcional! O site ficou exatamente como eu queria, muito satisfeito.</p>
+            <div class="d-flex mt-5">
+                <img src="./assets/jgLogo.avif" alt="" style="border-radius: 100%;" class="w-25 h-auto">
+                <div class="ps-5">
+                    <p class="fs-4">JG Serviços</p> 
+                    <i class="fs-5">Clezio de Souza - Dono</i>
                 </div>
             </div>
-    </section>
-
-    <div class="bg-black text-white p-3 ">
-        <p class="h3 text-center m-0" data-aos="fade-down" data-aos-duration="1500" >Plataformas em que atuo como freelancer</p>
-    </div>
-    <section class="bg-black p-5 d-flex flex-column flex-md-row justify-content-around align-items-center text-white gap-5">
-        <div class="text-center d-flex flex-column justify-content-between">
-            <div data-aos="fade-down-right" data-aos-duration="1500">
-                <img src="./assets/99freelas.png" alt="99Freelas logo" class="FreelasImgs rounded" >
-                <a href="https://www.99freelas.com.br/user/joao-pedro-masullo" target="_blank">
-                    <p class="h4 pt-5">99Freelas</p>
-                </a>
-            </div>
-        </div>
-        <div class="text-center d-flex flex-column justify-content-between">
-            <div data-aos="fade-down" data-aos-duration="1500">
-                <img src="./assets/workana-logo.png" alt="Workana logo" class="FreelasImgs rounded">
-                <a href="https://www.workana.com/freelancer/521b5580e5ae5c063d4f5440c484e9d0">
-                    <p class="h4 pt-5" >Workana</p>
-                </a>
-            </div>
-        </div>
-        <div class="text-center d-flex flex-column justify-content-between">
-            <div data-aos="fade-down-left" data-aos-duration="1500">
-                <img src="./assets/fiverr.png" alt="Fiverr logo" class="FreelasImgs">
-                <a href="https://br.fiverr.com/sellers/joaomasullo_dev/edit" target="_blank">
-                    <p class="h4 pt-5">Fiverr</p>
-                </a>
-            </div>
         </div>
     </section>
 
-    <footer class="d-flex justify-content-evenly bg-black text-white align-items-center p-5 flex-wrap">
-        <div data-aos="fade-down" data-aos-duration="2000">
-            <h1>JM</h1>
-        </div>
-        <div class="d-flex justify-content-center gap-5" >
-            <a href="#about" class="text-white ">Sobre</a>
-            <a href="#techs" class="text-white ">Techs</a>
-            <a href="#projects" class="text-white ">Projetos</a>
-        </div>
-        <div class="pt-3" data-aos="fade-down" data-aos-duration="2000">
-            <p>Outros meios de contato:</p>
-            <p>Email: <u>masullowebdev@gmail.com</u></p>
-        </div>
+    <section class="d-flex flex-column align-items-center DPad FifthSection">
+        <p class="display-1">Projetos Recentes</p>
+        <p>Veja projetos de sites e sistemas personalizados já desenvolvidos.</p>
+        <section class="w-50">
+            <div class="d-flex gap-2 justify-content-center">
+                <img src="https://images.unsplash.com/photo-1498502153174-e65bbd350bd3" alt="" class="w-50 rounded">
+                <img src="https://images.unsplash.com/photo-1678690832310-cf614292671d" alt="" class="w-50 rounded">
+            </div>
+            
+            <div class="d-flex justify-content-between mt-5">
+                <div class="text-start">
+                    <p class="h1">Websites</p>
+                    <p>Veja exemplos de Websites já desenvolvidos sob medida.</p>
+                </div>
+                <div>
+                    <a href="/services.html"><button class="button-white">Veja Mais</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="w-50 mt-5">
+            <div class="d-flex gap-2 justify-content-center">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="" class="w-50 rounded">
+                <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613" alt="" class="w-50 rounded">
+            </div>
+            
+            <div class="d-flex justify-content-between mt-5">
+                <div class="text-start">
+                    <p class="h1">Sistemas Avançados</p>
+                    <p>Veja exemplos de sistemas customizados desenvolvidos.</p>
+                </div>
+                <div>
+                    <a href="/services.html"><button class="button-white">Veja Mais</button></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="bg-black DPad px-5 " style="color: #eac151;">
+        <section class="d-flex justify-content-center gap-5 flex-wrap">
+            <div class="w-25 fs-5">
+                <p>Links rápidos</p>
+                <a class="text-decoration-none Links" href="/">Início</a> <br>
+                <a class="text-decoration-none Links" href="/services.html">Serviços</a> <br>
+                <a class="text-decoration-none Links" href="/contact.html">Contato</a>
+            </div>
+            <div class="w-25">
+                <p class="fs-3">Contato</p>
+                <p class="fs-6">Email: <u>masullowebdev@gmail.com</u></p>
+            </div>
+            <div class="w-25 d-flex align-items-center gap-5" style="font-size: 0.9em;">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-masullo-846b672b9/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin " viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Masullo404" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/people/JoaoMasullo/61573914655245/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/joao_masullo/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
     </footer>
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

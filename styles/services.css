@@ -1,0 +1,46 @@
+.ImgFilter{
+    filter: brightness(0.5);
+}
+.TextAboveImage{
+    height: 60vh;
+}
+.position-absolute{
+    padding-left: 7rem;
+}
+.ProjectsSection{
+    padding: 4rem 12rem;
+}
+.Carousel{
+    width: 70%;
+}
+.carousel-item{
+    padding: 6rem;
+}
+@media screen and (max-width:1400px) {
+    .d-flex.DPad{
+        flex-direction: column;
+    }
+    .d-flex.DPad > div.slide{
+        width: 100%;
+    }
+    .d-flex.DPad > div.w-25{
+        width: 100% !important;
+        padding:1rem 3rem ;
+    }
+}
+@media screen and (max-width:1000px) {
+    .position-absolute{
+        padding-left: 2rem;
+    }
+    .ProjectsSection{
+        padding: 4rem 2rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .ProjectsSection{
+        padding: 0px;
+    }
+    .carousel-item {
+        padding: 3rem;
+    }
+}
