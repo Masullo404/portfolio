@@ -7,6 +7,10 @@
 .position-absolute{
     padding-left: 7rem;
 }
+.Services > div{
+    width: 33% !important;
+    min-height: 600px;
+}
 .ProjectsSection{
     padding: 4rem 12rem;
 }
@@ -34,6 +38,13 @@
     }
     .ProjectsSection{
         padding: 4rem 2rem;
+    }
+    .Services{
+        flex-direction: column !important;
+    }
+    .Services > div{
+        width: 80% !important;
+        flex-grow: 1;
     }
 }
 @media screen and (max-width:550px) {
